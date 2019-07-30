@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="ytf-8">
+	<style>
+	div{
+		width:500px;
+		overflow:auto;
+	}
+	p{
+		width:800px;
+	
+	}
+	img{
+		width:100px;
+		border-radius:5px;
+		border:2px solid transparent;
+	}
+	img:hover{
+		border-color:black;
+	}
+	</style>
+</head>
+<body>
+	<div>
+		<p>
+			<img src="images/p_small_001.jpg">
+			<img src="images/p_small_002.jpg">
+			<img src="images/p_small_003.jpg">
+			<img src="images/p_small_004.jpg">
+			<img src="images/p_small_005.jpg">
+			<img src="images/p_small_006.jpg">
+			<img src="images/p_small_007.jpg">
+		</p>
+	</div>
+<body>
+</html>

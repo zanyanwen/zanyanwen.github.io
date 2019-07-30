@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			#comment{
+				/*宽度：95%
+					最小高度：100px;
+					边框：1px 实线 #D0E4C2
+					下外边距：10px
+					内边距：10;
+				*/
+				width:95%;
+				min-height:100px;
+				border:1px solid #D0E4C2;
+				margin-bottom:10px;
+				padding:10px;
+			}
+
+			#pages a{
+				/*边框，倒角*/
+				border:1px solid #ccc;
+				border-radius:5px;
+				/*内边距*/
+				padding:3px 10px;
+			}
+
+			#pages .current{
+				/*取消边框*/
+				border:0;
+			}
+
+
+			/******练习2*******/
+			/*1、#comment背景颜色*/
+			#comment{
+				background-color:#FCFFFA;
+			}
+			/*2、#pages 中的 a标记 鼠标悬停时 背景颜色*/
+			#pages a:hover{
+				background-color:#005aa0;
+				color:#fff;
+			}
+
+			#pages a.current{
+				background-color:transparent;
+				color:#000;
+			}
+			/*五角星 下边框*/
+			#comment div.content{
+				border-bottom:1px solid #D0E4C2;
+			}
+
+			/*五角星*/
+			#comment div.star{
+				/*宽度，高度，背景图像，平铺，背景图位置 */
+				width:76px;
+				height:15px;
+				/*background-image:url(../Images/iconlist_1.png);
+				background-repeat:no-repeat;
+				background-position:-108px -238px;*/
+				background:url(../Images/iconlist_1.png) no-repeat -108px -238px;
+				/*下外边距，左外边距*/
+				margin:0 0 5px 5px;
+			}
+
+			/*9.7作业*/
+			#comment p b{
+				background:#FDEDD2;
+				padding:5px 8px;
+			}
+			#comment p button{
+				/*宽度 ：82，高度：38，边框，倒角，渐变背景*/
+				width:82px;
+				height:38px;
+				border:1px solid #D5D5D5;
+				border-radius:5px;
+				background:linear-gradient(to bottom,#f9f9f9,#cdcdcd);
+			}
+
+			/*2016-9-8 练习1*/
+			#comment b{
+				/*取消加粗*/
+				font-weight:400;
+				/*文本颜色：333*/
+				color:#333;
+				/*右外边距*/
+				margin-right:8px;
+			}
+
+			/*设置 p 元素的 文本颜色：9c9a9c*/
+			#comment p{
+				color:#9C9A9C;
+			}
+			/*这是 span 元素的文本颜色：666*/
+			#comment span{
+				color:#666;
+			}
+			/*设置页面中所有的文本大小为 12px，字体为 微软雅黑*/
+			body{
+				font:12px "微软雅黑";
+			}
+			/*让按钮 右对齐*/
+			#comment p.btns{
+				text-align:right;
+			}
+			
+			/*页码的超链接 右对齐*/
+			#pages{
+				text-align:right;
+				/*宽度：95%*/
+				width:95%;
+			}
+
+			/*页码中的超链接 ，文本颜色 :005aa0,去掉下划线*/
+			#pages a{
+				color:#005aa0;
+				text-decoration:none;
+			}
+
+			#pages a.current{
+				color:#F60;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 评论信息 的 元素 -->
+		<div id="comment">
+			<div class="content">
+				<!-- 五角星 -->
+				<div class="star"></div>
+			</div>
+			<!-- 文本 -->
+			<p>
+				标&nbsp;&nbsp;签：
+				<b>比洗衣粉好</b>
+				<b>去污能力强</b>
+			</p>
+			<p>
+				心&nbsp;&nbsp;得： 
+				<span>买了几次了，挺好用的，洗的衣服很干净，以后就它了！</span>
+			</p>
+			<p>
+				购买日期： 
+				<span>2014-12-01</span>
+			</p>
+			<p class="btns">
+				<button>有用(3)</button>
+				<button>回复(3)</button>
+			</p>
+		</div>
+		<!-- 页码信息 的 元素 -->
+		<div id="pages">
+			<a class="current">1</a>
+			<a href="#">2</a>
+			<a href="#">3</a>
+			<a href="#">4</a>
+			<a href="#">5</a>
+			<a href="#">6</a>
+		</div>
+	</body>
+</html>

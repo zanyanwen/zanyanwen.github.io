@@ -1,0 +1,35 @@
+<!doctype html>											 <!--定义文档为html5类型-->
+ <head>
+  <meta charset="UTF-8">								 <!--设置网页编码为utf-8-->
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">		 <!--设置关键字，中间用逗号隔开-->
+  <meta name="Description" content="">					 <!--设置网页 描述-->
+  <title></title>		
+ </head>
+ <body>
+	<h1 align="center">flowers</h1>
+	<table width="200px">
+		<tr>
+			<td style="margin-right:30px;"><a href="#Daisy">Daisy</a></td>
+			<td><a href="Rose.html" target="_blank">Rose</a></td>
+			<td><a href="#Daffodils">Daffodil</a></td>
+		</tr>
+	</table>
+	<br>
+	<br>
+	<h2 id="Daisy">Daisy</h2>
+	<img src="Images/daisy.jpg" width="240px">A versatile flower, andsending daisies is always a pleasant way to make a lasting impression.
+	<br>
+	<br>
+	<h2 id="Rose">Rose</h2>
+	<img src="Images/rose.jpg" width="240px">With sunshine,water,and careful tending,roses will bloom serveral times a season.
+	<br>
+	<br>
+	<h2 id="Daffodils">Daffoils</h2>
+	<img src="Images/daffodil.jpg" width="240px">Daffoils bloom early in spring and welcome the growing season.
+	<br>
+	<br>
+	<a href="#"><img src="Images/top.gif"></a>
+ </body>
+</html>

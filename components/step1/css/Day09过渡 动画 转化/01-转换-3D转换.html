@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#parent{
+				width:400px;
+				height:300px;
+				border:1px solid #333;
+				position:absolute;
+				left:300px;
+				top:150px;
+
+				/*模拟 人眼 到 投射平面的距离*/
+				perspective:50px;
+				-webkit-perspective:50px;
+			}
+
+			#son{
+				width:100px;
+				height:100px;
+				background:#f00;
+				margin:100px auto;
+				/*3D - x轴旋转*/
+				transform:rotatex(45deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="parent">
+			<div id="son">3D转换元素</div>
+		</div>
+	</body>
+</html>

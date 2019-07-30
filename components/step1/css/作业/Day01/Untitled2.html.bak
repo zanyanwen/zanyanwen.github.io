@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+	</head>
+	<body>
+		<h1 align="center">HTML5<font color="red">&lt;Day05&gt;</font></h1>
+		<hr/>
+		<h2><b>HTML</b>文档片段</h2>
+		<h3>1.1问题</h3>
+		<p>创建如图-1所示的html页面；</p>
+		<div align="center"><img src="images/page.JPG"/></div>
+		<h4 align="center">图-1</h4>
+		<h3>1.2方案</h3>
+		<p>使用html标记来完成该页面效果</p>
+		<h3>1.3
+		
+		实现</h3>
+		<p>建立一个文本文件，并修改文件名为first.html，然后使用文本编辑器打开该文件，并未该文件添加代码，以创
+		建标准格式的html文档</p>
+		<div align="center"><img src="images/page_struct.JPG"></div>
+		<h4 align="center">图-2</h4>
+		<p>然后，在body元素中添加代码，以创建居中显示的段落文本，代码如下所示：</p>
+		<pre>
+			&lt;p align="center" title="段落"&gt;
+				居中的段落。
+			&lt;p&gt;
+		</pre>
+		<h3>1.4 扩展</h3>
+		创建如下图所示的表格：
+		<table align="center" border="1px solid black" width="80%">
+		<caption>表-1</caption>
+			<tr>
+				<td>全月应纳税所得额</td>
+				<td>税率</td>
+				<td>速算扣除数</td>
+			</tr>
+			<tr>
+				<td>全月应纳税所得额&lt;1500</td>
+				<td>3%</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td>全月应纳税所得额&lt;1500</td>
+				<td>10%</td>
+				<td>105</td>
+			</tr>
+			<tr>
+				<td colspan="3">...</td>
+			</tr>
+			<tr>
+				<td colspan="3">计算公式为：</td>
+			</tr>
+		</table>
+		<div align="center">
+		<a href="#">关于我们</a>
+		<a href="#">联系我们</a>
+		<a href="#">广告服务</a>
+		</div>
+		<p align="center">版权所有&copy;Tarena 达内科技集团</p>
+	</body>
+</html>

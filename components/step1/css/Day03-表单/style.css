@@ -1,0 +1,10 @@
+/*1、所有的div的文本颜色为 pink 色，大小为 18 pt*/
+div{
+	color:pink;
+	font-size:18pt;
+}
+/*2、所有的p的文字大小为 26pt，背景颜色为 purple 色*/
+p{
+	font-size:26pt;
+	background-color:purple;
+}

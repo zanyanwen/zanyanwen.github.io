@@ -1,0 +1,67 @@
+<!doctype html>											 <!--定义文档为html5类型-->
+ <head>
+  <meta charset="UTF-8">								 <!--设置网页编码为utf-8-->
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">		 <!--设置关键字，中间用逗号隔开-->
+  <meta name="Description" content="">					 <!--设置网页 描述-->
+  <title></title>
+  <style type="text/css">
+	#stage{
+		width:800px;
+		height:400px;
+		border:1px solid #000;
+		margin:100px auto;
+		perspective:1000;
+		-webkit-perspective:1000;
+		transform-style:preserve-3d;
+	}
+	#parent{
+		width:800px;
+		height:400px;
+		border:1px solid #DDD;
+		position:relative;
+		transform:rotatex(30deg) rotatey(0deg);
+	}
+	#parent div{
+		width:100px;
+		height:100px;
+		background-color:#f00;
+		position:absolute;
+		top:150px;
+		left:350px;
+	}
+	#parent div:nth-child(1){
+		transform:rotatey(0deg) translatez(200px);
+	}
+	#parent div:nth-child(2){
+		transform:rotatey(60deg) translatez(200px);
+	}
+	#parent div:nth-child(3){
+		transform:rotatey(120deg) translatez(200px);
+	}
+	#parent div:nth-child(4){
+		transform:rotatey(0deg) translatez(-200px);
+	}
+	#parent div:nth-child(5){
+		transform:rotatey(-60deg) translatez(200px);
+	}
+	#parent div:nth-child(6){
+		transform:rotatey(-120deg) translatez(200px);
+	}
+
+  </style>
+ </head>
+ <body>
+	<div id="stage">
+		<div id="parent">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+ </body>
+</html>

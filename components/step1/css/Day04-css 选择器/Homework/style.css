@@ -1,0 +1,5 @@
+/*样式规则1:控制页面上的h2元素，文本颜色为绿色，背景颜色为灰色*/
+h2{
+	color:green;
+	background-color:gray;
+}

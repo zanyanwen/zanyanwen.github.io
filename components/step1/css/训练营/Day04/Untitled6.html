@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<style>
+		/*1.获取id为div1 元素中所有的span元素，设置文本颜色为绿色*/
+		#div1 span{
+			color:green
+		}
+		/*2.获取id为div1 元素中下一级元素的span元素，设置背景颜色为黑色*/
+		#div1>span{
+			background:#000;
+		}
+		/*3.获取id为div1中p元素中的span元素，设置文字大小为48px*/
+		#div1>p>span{
+			font-size:48px;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="div1">
+			<span>div中的span</span>
+			<p>
+				<span>div中p的span</span>
+			</p>
+		</div>
+	</body>
+</html>

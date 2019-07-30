@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			p{
+				margin:0;
+			}
+			#nav{
+				/*宽度，高度，背景颜色，水平居中*/
+				width:900px;
+				height:40px;
+				background:#E64346;
+				margin:0 auto;
+			}
+
+			#nav p{
+				/*宽度，高度，背景颜色*/
+				width:210px;
+				height:40px;
+				background:#CD2A2C;
+			}
+			#nav p a{
+				/*左浮动，高度，行高，左内边距，文字大小，加粗，颜色，去下划线*/
+				float:left;
+				height:40px;
+				line-height:40px;
+				padding-left:10px;
+				font-size:14px;
+				font-weight:bold;
+				color:#fff;
+				text-decoration:none;
+			}
+
+			#nav p b{
+				/*右浮动，宽度，高度，背景，上外边距，右外边距*/
+				float:right;
+				width:20px;
+				height:20px;
+				background:url(../Images/iconlist_2.png) no-repeat -65px 0;
+				margin-top:10px;
+				margin-right:10px;
+			}
+
+			/*练习2*/
+			#nav p{
+				float:left;
+			}
+			#nav ul{
+				float:left;
+			}
+			#nav li{
+				float:left;
+			}
+			#nav li a{
+				float:left;
+				width:100px;
+				height:40px;
+				text-align:center;
+				line-height:40px;
+				font-size:14px;
+				font-weight:bold;
+				color:#fff;
+				text-decoration:none;
+			}
+			#nav li a:hover{
+				background:#BD2A2C;
+			}
+
+			/* cate_content*/
+			#cate_content{
+				width:900px;
+				min-height:100px;
+				margin:0 auto;
+			}
+			
+			ul{
+				margin:0;
+				padding:0;
+				list-style:none;
+			}
+
+			#cate_box{
+				/*width:210 height:400 border:2px solid ****/
+				width:210px;
+				height:400px;
+				border:2px solid #CD2A2C;
+				box-sizing:border-box;
+				border-top:0;
+				background:#FAFAFA;
+				padding-top:5px;
+			}
+
+			#cate_box a{
+				/*文字颜色，大小，去掉下划线*/
+				color:#333;
+				font-size:14px;
+				text-decoration:none;
+			}
+
+			#cate_box li{
+				/*边框*/
+				border-top:1px solid transparent;
+				border-bottom:1px solid #fff;
+				/*内边距*/
+				padding:5px 0 5px 10px;
+				/*宽度 ：预留 后方 10px 距离*/
+				width:186px;
+			}
+			#cate_box li:hover{
+				border-color:#ddd;
+				background:#fff;
+			}
+		</style>
+	</head>
+	<body>
+		<nav id="nav">
+			<!-- 全部商品分类 -->
+			<p>
+				<a href="#">全部商品分类</a>
+				<b></b>
+			</p>
+			<!-- 导航列表 -->
+			<ul>
+				<li>
+					<a href="#">首页</a>
+				</li>
+				<li>
+					<a href="#">夺宝岛</a>
+				</li>
+				<li>
+					<a href="#">商城</a>
+				</li>
+				<li>
+					<a href="#">服装</a>
+				</li>
+			</ul>
+		</nav>
+		<div id="cate_content">
+			<ul id="cate_box">
+				<li>
+					<a href="#">图书、音像、数字商品 </a>
+				</li>
+				<li>
+					<a href="#">家用电器</a>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

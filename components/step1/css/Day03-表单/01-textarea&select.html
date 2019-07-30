@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<form>
+			<p>
+				用户性别：
+				<input id="rdoMale" type="radio" name="rdoGender" value="0">
+				<label for="rdoMale">男士</label>
+				<input type="radio" name="rdoGender" value="1">女士
+			</p>
+			<p>
+				自我介绍：
+				<textarea name="txtIntro" cols="50" rows="5"></textarea>
+			</p>
+			<p>
+				<!-- 选项框-下拉选项框 -->
+				请选择学历：
+				<select name="selEdu">
+					<option value="0">小本</option>
+					<option value="1">大本</option>
+					<option value="2" selected>硕士及以上</option>
+				</select>
+			</p>
+			<p>
+				<!-- 选项框-滚动列表 -->
+				意向工作城市：
+				<select name="selCity" size="3" multiple>
+					<option value="0">北京</option>
+					<option value="1">上海</option>
+					<option value="2">重庆</option>
+					<option value="3">天津</option>
+				</select>
+			</p>
+			<p>
+				<fieldset>
+					<legend>基本信息</legend>
+					用户名称：<input><br>
+					用户密码：<input>
+				</fieldset>
+			</p>
+		</form>
+	</body>
+</html>

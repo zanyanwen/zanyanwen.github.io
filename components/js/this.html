@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>this</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+</head>
+<body>
+
+    
+<script>
+    function fun(){
+        console.log(this=== window)
+    }
+    fun()
+
+    function func1(arg1,arg2){
+        console.log(this)
+        console.log(arg1)
+        console.log(arg2)
+    }
+    func1.call('a','b','c')
+    func1.apply('a',['b','c'])
+
+
+    var savedThis;
+    function Constr(){
+        savedThis = this
+    }
+
+    var inst = new Constr()
+    console.log()
+
+    var obj = {
+        method:function(){
+            console.log(this===obj)
+        }
+    }
+    obj.method();
+
+    console.log("顶层",this===window)
+</script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+1、框模型
+	1、what
+		元素定义 内边距，外边距，边框，尺寸
+
+		元素总宽度=左右外边距+左右边框+左右内边距+width
+	2、外边距
+		1、什么是外边距
+			元素边框外的空白区域
+		2、语法
+			属性：
+				margin
+				margin-left
+				margin-right
+				margin-top
+				margin-bottom
+			取值
+				1、px
+				2、%
+				3、auto
+					左右方向应用auto，允许使块级元素水平居中显示，前提是块级元素必须设置宽度
+					auto对上下无效
+				4、负值
+					主要用在 top/left
+					为了移动元素
+		3、具备默认外边距的元素
+			body,p,h1~h6,ol,ul,dl,dd,pre{
+				margin:0;
+			}
+			CSS重写
+		4、margin简便写法
+			margin : value; 四个方向
+			margin : v1 v2; 上下 左右
+			margin : v1 v2 v3; 上  左右  下
+			margin : v1 v2 v4 v4;上右下左
+
+		5、外边距特殊效果
+			1、外边距合并
+				垂直两个外边距相遇时，会合并成一个，值以大者为主
+			2、外边距的溢出
+				特殊场合下，为子元素设置上下外边距时有可能会作用到父元素上
+				1、父元素无边框
+				2、子元素必须是父元素中的第一个或最后一个元素
+			3、对行内 和 行内块元素的影响
+				行内元素：上下外边距无效
+				行内块元素：上下外边距会影响同行的其他元素
+	3、内边距
+		1、什么是内边距
+			内容区域和边框之间的空白距离
+			会扩大元素边框所占的区域
+		2、语法
+			属性:
+				padding
+				padding-方向:
+			取值：
+				1、px
+				2、百分比
+		3、渐变写法 ：同上
+		4、注意
+			1、为行内元素设置内边距时，只会影响自己，不会影响其他元素。
+	4、box-sizing
+		指定元素 尺寸 的计算模式
+		取值：
+			1、content-box
+				width和height 指定的是内容区域的宽和高，边框和内边距 需要单独计算
+			2、border-box
+				width和height 指定的是边框以及以内的宽度和高度，包含 border以及padding
+2、背景属性
+	1、background-color
+	2、background-image
+	3、background-repeat
+		no-repeat
+		repeat(默认值)
+		repeat-x
+		repeat-y
+	4、background-size
+		value1 value2
+		value1% value2%
+		cover ： 覆盖，背景显示不完整
+		contain : 包含，直到右边或下边碰到元素边缘
+	5、background-attachment
+		1、scroll
+			滚动
+		2、fixed
+			固定
+	6、background-position
+		1、x y
+			x:水平移动距离，值为正，右移，值为负，左移
+			y:垂直移动距离，值为正，下移，值为负，上移
+		2、x% y%
+		3、关键字
+			x:left/center/right
+			y:top/center/bottom
+	7、背景属性
+		background:color url() repeat attachment position;
+3、渐变-线性渐变
+	1、语法
+		属性：background-image/background
+		取值：
+			linear-gradient()
+	2、线性渐变
+		background-image:linear-gradient(angle,color-point1,color-point2,...);
+		1、angle
+			方向或角度
+			1、to top -> 0deg
+			2、to right -> 90deg
+			3、to bottom -> 180deg
+			4、to left -> 270deg
+		2、color-point
+			颜色，及其出现的位置
+			ex
+				red 0px : 开始的时候是红色
+				green 25px : 25px时候是绿色

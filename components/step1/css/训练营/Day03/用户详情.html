@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<style>
+		</style>
+	</head>
+	<body>
+	<form method="post" enctype="form-date">
+	<table border="1" bgcolor="pink">
+		<option>用户详情信息页面</option>
+		<br/>
+		<tr>
+			<td align="right">用户名</td>
+			<td><input type="text"><font color="red" size="3">*</font>用户名不能以_开头</td>
+		</tr>
+		<tr>
+			<td align="right">密码</td>
+			<td><input type="password"><font color="red" size="3">*</font>密码不能小于6位数且不能为空</td>
+		</tr>
+		<tr>
+			<td align="right">确认密码</td>
+			<td><input type="password"><font color="red" size="3">*</font>两次密码必须一致</td>
+		</tr>
+		<tr>
+			<td align="right">性别</td>
+			<td>
+				<input type="radio" name="sex">男
+				<input type="radio" name="sex">女
+				<input type="radio" name="sex" checked>泰国来的
+			</td>
+		</tr>
+		<tr>
+			<td align="right"/>爱好</td>
+			<td>
+				<input type="checkbox"/>吃饭
+				<input type="checkbox"/>睡觉
+				<input type="checkbox"/>打豆豆
+			</td>
+		</tr>
+		<tr>
+			<td align="right">头像</td>
+			<td><input type="file"/></td>
+		</tr>
+		<tr>
+			<td align="right">地址</td>
+			<td>
+				<select>
+					<option>请选择</option>
+				</select>
+				<select>
+					<option>请选择</option>
+				</select>
+				<select>
+					<option>请选择</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td align="right">个人简介</td>
+			<td>
+				<textarea placeholder="请输入100字的个人简介..." rows="8" cols="10"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td align="right">年龄</td>
+			<td><input type="number" min="1"/></td>
+		</tr>
+		<tr>
+			<td align="right">幸运色</td>
+			<td><input type="color"/></td>
+		</tr>
+		<tr>
+			<td align="right">个人博客</td>
+			<td><input type="url"/></td>
+		</tr>
+		<tr>
+			<td align="right">范围</td>
+			<td><input type="range">结果为：</td>
+		</tr>
+		<tr>
+			<td align="right">邮箱</td>
+			<td><input type="email"/></td>
+		</tr>
+		<tr>
+			<td><input type="submit" value="注册"/></td>
+			<td><input type="reset" value="重置"/></td>
+		</tr>
+	</table>
+	</form>
+	</body>
+</html>

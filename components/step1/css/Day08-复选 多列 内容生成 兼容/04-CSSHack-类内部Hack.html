@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#d1{
+				width:200px;
+				height:200px;
+				background-color:red;
+
+				background-color:pink\0;/*IE8,9,10 背景为 粉色*/
+				background-color:orange\9\0;/*IE9,10 背景颜色 orange 色*/
+				+background-color:blue;/*IE6,7 背景颜色为 蓝色*/
+				-background-color:green;/*IE6 背景颜色为 绿色*/
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div id="d1"></div>
+	</body>
+</html>

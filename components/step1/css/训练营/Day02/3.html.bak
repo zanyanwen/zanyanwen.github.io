@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<style>
+		</style>
+	</head>
+	<body>
+	<dl>
+		<dt>把一只长颈鹿放进电冰箱需要几个步骤？</dt>
+	</dl>
+	<ol type="i" start="3">
+		<li>打开冰箱门</li>
+		<li>把长颈鹿塞进去</li>
+		<li>关上冰箱门</li>
+	</ol>
+
+	<dl>
+		<dt>把一只大象放进电冰箱需要几个步骤？</dt>
+		<dd>
+			<ul type="square">
+				<li>首先把冰箱门打开</li>
+				<li>然后把长颈鹿拿出来</li>
+				<li>接下来把大象塞进去</li>
+				<li>最后把冰箱门关上</li>
+			</ul>
+		</dd>
+	</dl>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/*1、通过 id 为 d1的元素 找到 它的相邻兄弟 p元素，并且设置其文本颜色 为 红色*/
+			#d1+p{color:red;}
+			/*2、通过 id为d1的元素，找到 它的相邻兄弟 并且 id为p2的元素，设置其背景颜色为黄色 */
+			#d1+#p2{background:yellow;}
+
+			#d1~p{
+				font-size:28px;
+			}
+
+			#d1~#p2{
+				border:1px solid #333;
+			}
+		</style>	
+	</head>
+	<body>
+		<div id="d1">这是一个DIV</div>
+		<p id="p1">这是一个p元素</p>
+		<p id="p2">这是另一个p元素</p>
+	</body>
+</html>

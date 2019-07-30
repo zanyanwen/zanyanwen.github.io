@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>lazyMan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    
+
+    <script>
+        function _LazyMan(name){
+            this.task =[];
+            var self = this;
+            var fn = (function(n){
+                var name = n
+                return function(){
+                    console.log("Hi! This is " +name+ "!")
+                    self.next()
+                }
+            })(name)
+
+            this.task.push(fn)
+            setTimeout(function(){
+                self.next()
+            },0)
+        }
+
+        _LazyMan.prototype.next = function(){
+            var fn = this.task.shift()
+            fn && fn()
+        }
+
+        _LazyMan.prototype.eat = function(name) {
+            var self = this;
+            var fn =(function(name){
+                return function(){
+                    console.log("Eat " + name + "~");
+                    self.next()
+                }
+            })(name);
+            this.task.push(fn);
+            return this; // 实现链式调用
+        }
+
+        _LazyMan.prototype.sleep = function(time){
+            var self = this
+            var fn = (function(time){
+                return function(){
+                    setTimeout(function(){
+                        console.log("Wack up after "+time+" ~")
+                        self.next()
+                    },time*1000)
+                }
+            })(time)
+            this.task.push(fn)
+            return this
+        }
+
+        _LazyMan.prototype.sleepFirst = function(time){
+            var self = this
+            var fn = (function(time){
+                return function(){
+                    setTimeout(function(){
+                        console.log("Wake up after "+time+" ~")
+                        self.next
+                    },time*1000)
+                }
+            })(time)
+        }
+
+        function lazyMan(name){
+            return new _LazyMan(name)
+        }
+
+        
+        lazyMan("Hank").sleep(2).eat("dinner")
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!doctype html>											 <!--定义文档为html5类型-->
+ <head>
+  <meta charset="UTF-8">								 <!--设置网页编码为utf-8-->
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">		 <!--设置关键字，中间用逗号隔开-->
+  <meta name="Description" content="">					 <!--设置网页 描述-->
+  <title></title>		
+ </head>
+ <body>
+	<h2 id="Rose">Rose</h2>
+	<img src="Images/rose.jpg" width="240px">With sunshine,water,and careful tending,roses will bloom serveral times a season.
+ </body>
+</html>

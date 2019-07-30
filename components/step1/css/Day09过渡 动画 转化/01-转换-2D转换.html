@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#d1,#d2{
+				width:200px;
+				height:200px;
+				position:absolute;
+				left:400px;
+				top:200px;
+			}
+			#d1{
+				border:1px solid #ddd;
+			}
+			#d2{
+				border:1px dotted #f00;
+				background:#00f;
+				opacity:0.5;
+			}
+			
+			#d2{
+				color:red;
+				/*将 d2 元素 向 右下 各移动50px*/
+				/*transform:translate(50px,50px);*/
+
+				/*改变d2元素的尺寸*/
+				/*transform:scale(-2);*/
+
+
+				/*旋转,位移*/
+				transform:translate(100px) rotate(45deg) ;
+				/* transform-origin:0px 0px; */
+				/* transform:rotate(0deg); */
+
+				/*沿x轴倾斜45deg*/
+				/* transform:skewy(45deg); */
+			}
+		</style>
+	</head>
+	<body>
+		<div id="d1">原始元素</div>	
+		<div id="d2">转换元素</div>
+	</body>
+</html>

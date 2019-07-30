@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			#my_jd{
+				width:360px;
+				margin-left:200px;
+				/*相对定位：配合#menu做绝对定位*/
+				position:relative;
+
+				background:#ddd;
+			}
+			#menu{
+				width:400px;
+				height:100px;
+				background:#ddd;
+
+				/*绝对定位*/
+				position:absolute;
+				top:18px;
+				left:-40px;
+
+				/*隐藏*/
+				display:none;
+			}
+
+			#my_jd:hover #menu{
+				display:block;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="my_jd">
+			我的京东
+			<!-- 弹出菜单 -->
+			<div id="menu">
+				我的京东弹出菜单
+			</div>
+		</div>
+	</body>
+</html>

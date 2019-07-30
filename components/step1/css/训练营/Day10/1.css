@@ -1,0 +1,48 @@
+#box{
+	width:300px;
+	height:200px;
+	border:2px solid red;
+	border-bottom:2px solid green;
+}
+#cir{
+	width:300px;
+	height:340px;
+	border:2px solid black;
+	border-radius:150px;
+
+}
+#wai{
+	width:200px;
+	height:200px;
+	border:1px solid black;
+	margin:auto;
+	/*padding:40px 10px;*/
+}
+#nei{
+	width:100px;
+	height:100px;
+	border:1px solid green;
+	margin-top:40px;
+	margin-left:10px;
+}
+#fdk{
+	width:300px;
+	height:200px;
+	border:1px solid black;
+	margin:40px auto;
+}
+#fd{
+	width:30px;
+	height:30px;
+	border:1px solid red;
+	float:left;
+	margin-left:10px;
+	margin-top:20px;
+}
+#fd+div{
+	width:30px;
+	height:30px;
+	border:1px solid red;
+	float:left;
+	margin-top:20px;
+}

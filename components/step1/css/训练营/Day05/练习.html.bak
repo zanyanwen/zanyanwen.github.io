@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<style>
+			a{
+				border:1px solid red;   /*边框*/
+				font-size:15px;			/*字体大小*/
+				color:black;			/*字体颜色*/    
+				text-decoration:none;	/*去掉下划线*/
+			}
+			a:hover{
+				color:#fff;				
+				font-size:30px;
+				border:none;			/*去掉边框*/
+				text-decoration:underline;	/*加上下划线*/
+				background:green;
+				padding:10px;			/*内边距  增大元素*/
+			}
+			div{
+				margin:auto;			/*盒子水平居中*/
+				border:1px solid green;	
+				width:400px;
+				height:100px;
+				text-align:center;		
+				line-height:100px;
+				padding:20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<a href="#">首页</a>
+			<a href="#">视频</a>
+			<a href="#">食品</a>
+		</div>
+	</body>
+</html>

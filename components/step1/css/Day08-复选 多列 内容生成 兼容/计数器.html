@@ -1,0 +1,39 @@
+<!doctype html>											 <!--定义文档为html5类型-->
+ <head>
+  <meta charset="UTF-8">								 <!--设置网页编码为utf-8-->
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">		 <!--设置关键字，中间用逗号隔开-->
+  <meta name="Description" content="">					 <!--设置网页 描述-->
+  <title></title>	
+  <style type="text/css">
+	body{
+		counter-reset:c1 0;
+	}
+	h1{
+		counter-reset:c2 0;
+		counter-increment:c1 1;
+	}
+	h2{
+		counter-increment:c2 1;
+		margin-left:40px;
+	}
+	h1:before{
+		content:counter(c1)"、";
+	}
+	h2:before{
+		content:counter(c1)"." counter(c2);
+	}
+  </style>
+ </head>
+ <body>
+	<h1>html</h1>
+	<h2>基本元素</h2>
+	<h2>块级元素</h2>
+	<h2>行内元素</h2>
+	<h1>css</h1>
+	<h2>选择器</h2>
+	<h2>边框属性</h2>
+	<h2>尺寸属性</h2>
+ </body>
+</html>

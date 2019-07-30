@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title></title>
+  <meta charset="utf-8">
+	<style>
+		body{
+			background-color:#F2F2F2;
+		}
+		#d1{
+			width:350px;
+			margin-left:15%;
+			margin-top:8%;
+		}
+		#d3{
+			border:5px solid #E1E1E1;
+			width:830px;
+			height:400px;
+			margin-left:20%;
+			margin-top:3%;
+			background-color:#fff;
+			/*box-shadow:3px 3px 5px;*/
+		}
+		#d2{
+			width:145px;
+			height:40px;
+			background-image:url('homework/login_all_bg.png');
+			background-repeat:no-repeat;
+			background-position:-10px -130px;	
+			float:right;
+			margin-top:10px;
+		}
+		#b1{
+			float:right;
+			margin-top:10px;
+		}
+		#boad2{
+			width:308px;
+			height:34px;
+			background-image:url('homework/login_all_bg.png');
+			background-repeat:no-repeat;
+			background-position:-1px -61px;
+			margin-bottom:20px;
+		}
+		#zhuce{
+			width:117px;
+			height:34px;
+			background-image:url('homework/1.png');
+			background-repeat:no-repeat;
+			background-position:-600px -530px;
+			margin-top:20px;
+		}
+		#b1 .b2{
+			margin-bottom:20px;
+			font-size:12px;
+		}
+		#b1 .b3{
+			color:#999;
+		}
+		#b1 a{
+			color:blue;
+		}
+		#b1 .inp:hover{
+			color:#A4C6FD;
+		}
+		#textbox{
+			width:300px;
+			height:50px;
+			
+		}
+		#text1{
+			width:80px;
+			height:45px;
+			line-height:50px;
+		}
+	</style>
+ </head>
+ <body>
+	<div id="d1">
+		<div id="d2"></div>
+		<div><img src="homework/jd_logo.png"></div>
+	</div>
+
+	<div id="d3">
+		<div id="b1">
+			<span>邮箱/用户名/已验证手机</span><br/>
+			<div id="textbox" class="b2 b3">
+				<div id="text1"><input type="text" size="39"></div>
+			</div>
+
+			<div class="b2 b3">
+				<span>密码</span><br/>
+				<span class="inp"><input type="password" size="39"></span>
+			</div>
+			
+			<div class="b2">
+				<input type="checkbox">自动登录
+				<input type="checkbox">安全账户登录
+				<input type="checkbox"><a href="#">忘记密码</a>
+			</div>
+
+			<div id="boad2"></div>
+			
+			<div class="b2 b3">
+				<span>使用合作网站账号登陆京东</span>
+			</div>
+
+			<div class="b2">
+				<a href="#">网银钱包</a>
+				<a href="#">QQ</a>
+				<a href="#">其他</a>
+			</div>
+			<div id="zhuce"></div>
+		</div>
+
+		<div>
+			<img src="homework/jd_show.png">
+		</div>
+	</div>
+ </body>
+</html>

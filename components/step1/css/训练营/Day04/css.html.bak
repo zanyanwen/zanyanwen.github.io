@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<link type="text/css" rel="stylesheet" href="1.css">
+	</head>
+	<body>
+	<!--内联样式-->
+	<a href="#">首页</a>
+	<h1>大标题</h1>
+	</body>
+</html>

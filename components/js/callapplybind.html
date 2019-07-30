@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>call apply bind</title>
+</head>
+<body>
+    <script>
+        var  numbers = [5, 458 , 120 , -215 ]; 
+        var  maxInNumbers = Math.max.apply(this,numbers)   //458
+        console.log(maxInNumbers)
+        var  maxInNumbers = Math.max.call(Math,5, 458 , 120 , -215); //458
+        console.log(maxInNumbers)
+    </script>
+</body>
+</html>

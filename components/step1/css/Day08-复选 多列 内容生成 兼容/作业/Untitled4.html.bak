@@ -1,0 +1,63 @@
+<!doctype html>											 <!--定义文档为html5类型-->
+ <head>
+  <meta charset="UTF-8">								 <!--设置网页编码为utf-8-->
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">		 <!--设置关键字，中间用逗号隔开-->
+  <meta name="Description" content="">					 <!--设置网页 描述-->
+  <title></title>	
+  <style type="text/css">
+	#circle{
+		width:200px;
+		height:200px;
+		border:2px solid #999;
+		border-radius:100px;
+		margin:100px auto;
+		position:relative;
+	}
+	#d1{
+		width:4px;
+		height:50px;
+		background:#999;
+		position:absolute;
+		left:98px;
+		top:50px;
+		transform-origin:center bottom;
+		animation:clock 20s linear infinite;
+	}
+	#d2{
+		width:2px;
+		height:80px;
+		background:#999;
+		position:absolute;
+		left:100px;
+		top:20px;
+		transform-origin:center bottom;
+		animation:clock 60s linear infinite;
+	}
+	#d2:hover{
+		transform:rotate(360deg);
+	}
+
+	@keyframes clock{
+		0%{
+			transform:rotate(0deg);
+		}
+		50%{
+			transform:rotate(180deg);
+		}
+		100%{
+			transform:rotate(360deg);
+		}
+	}
+  </style>
+ </head>
+ <body>
+	<div id="circle">
+		<div id="d1"></div>
+		<div id="d2"></div>
+	</div>
+	
+ </body>
+</html>
+

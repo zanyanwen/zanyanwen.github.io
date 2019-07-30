@@ -1,0 +1,219 @@
+/*第一步：网页的整体样式布局*/
+body,ul,li{
+	margin:0px;
+	padding:0px;
+	font-family:"microsoft yahei";
+	color:#ccc;
+	font-size:10pt;
+	list-style-type:none;
+}
+#header,#jixing,#tixing,#icons,#footer{
+	width:900px;
+	height:50px;
+	margin:auto;
+}
+#banner,#hujiao,#dingwei{
+	width:100%;
+	height:380px;
+}
+#jixing{height:420px;}
+#hujiao{height:580px;}
+#tixing{height:300px;}
+#dingwei{height:300px;}
+#icons{height:400px;}
+#footer{height:30px;}
+
+/*为header部分定义样式*/
+#header{
+	border-bottom:1px solid #ccc;
+}
+#header div{
+	width:152px;
+	height:33px;
+	margin:10px;
+	background-image:url("images/iconlist_1.png");
+	background-repeat:no-reprat;
+	background-position:-869px -98px;
+	float:left;
+}
+#header ul{
+	float:right;
+	list-style-type:none;
+}
+#header ul li{
+	float:left;
+	height:47px;
+	line-height:47px;
+	padding:0px 10px;
+	transition:border 3s;
+}
+#header ul li a{
+	color:#999;
+	text-decoration:none;
+
+}
+#header ul li:hover{
+	border-bottom:2px solid red;
+}
+/*定义banner样式*/
+#banner{
+	background-image:url("images/bg_1.jpg");
+	background-size:100% 100%;
+	border:1px solid #ccc;
+}
+.content{
+	width:900px;
+	margin:0px auto;
+	text-align:center;
+}
+.content h1{
+	width:456px;
+	height:53px;
+	background-image:url("images/iconlist_1.png");
+	background-repeat:no-repeat;
+	background-position:-870px 0px;
+	margin:0px auto;
+	margin-top:50px;
+}
+.content p{
+	text-align:center;
+	margin:20px;
+}
+/*为圆片定义样式*/
+#banner ul{
+	width:820px;
+	height:200px;
+	margin:0px auto;
+	position:relative;
+}
+#banner ul li b,#banner ul li i{
+	width:174px;
+	height:173px;
+	display:block;
+	background-image:url("images/iconlist_1.png");
+	position:absolute;
+}
+#banner ul li i{
+	height:20px;
+	background-image:url("images/iconlist_1.png");
+	background-position:-870px -130px;
+}
+#banner ul #c_2 b{
+	background-position:-174px 0px;
+}
+#banner ul #c_3 b{
+	background-position:-348px 0px;
+}
+#banner ul #c_4 b{
+	background-position:-522px 0px;
+}
+#banner ul #c_5 b{
+	background-position:-696px 0px;
+}
+#banner ul li i{
+	top:170px;
+}
+#banner ul li{
+	position:absolute;
+} 
+#banner ul #c_1{}
+#banner ul #c_2{
+	left:160px;
+	z-index:200;
+}
+#banner ul #c_3{
+	left:320px;
+	z-index:300;
+}
+#banner ul #c_4{
+	left:480px;
+	z-index:400;
+}
+#banner ul #c_5{
+	left:640px;
+	z-index:500;
+}
+#c_1{animation:move01 3s linear;}
+#c_2{animation:move02 3.8s linear;}
+#c_3{animation:move03 4.6s linear;}
+#c_4{animation:move04 5.4s linear;}
+#c_5{animation:move05 6.2s linear;}
+
+@keyframes move01{
+	from{transform:translateX(-600px);}
+	to{transform:translateX(0);}
+}
+@keyframes move02{
+	from{transform:translateX(-760px);}
+	to{transform:translateX(0);}
+}
+@keyframes move03{
+	from{transform:translateX(-920px);}
+	to{transform:translateX(0);}
+}
+@keyframes move04{
+	from{transform:translateX(-1080px);}
+	to{transform:translateX(0);}
+}
+@keyframes move05{
+	from{transform:translateX(-1240px);}
+	to{transform:translateX(0);}
+}
+
+/*旋转*/
+#c_5 b{animation:xz 6.2s linear;}
+@keyframes xz{
+	from{transform:rotate(0deg);}
+	to{transform:rotate(720deg);}
+}
+
+/*好记性，不如好提醒*/
+#jixing h1{
+	font-size:15pt;
+	text-align:center;
+	color:black;
+	margin:20px;
+}
+#jixing p{
+	margin:20px;
+}
+#jixing h2{
+	width:690px;
+	height:300px;
+	background-image:url("images/iconlist_2.png");
+	background-position:-1649px 0px;
+	margin:20px auto;
+}
+
+/*一键呼叫*/
+#hujiao{
+	background-image:url("images/bg_2.jpg");
+	background-size:100% 100%;
+}
+#hujiao .content div{
+	width:450px;
+	height:400px;
+	float:left;
+	margin:50px;
+	margin-left:0px;
+}
+#hujiao h1{
+	width:244px;
+	height:84px;
+	background-image:url("images/iconlist_2.png");
+	background-position:-275px -120px;
+}
+#hujiao p{
+	text-align:right;
+	color:black;
+}
+#hujiao h2{
+	width:253px;
+	height:533px;
+	background-image:url("images/iconlist_2.png");
+	background-position:-570px 0px;
+	float:left;
+}
+#hujiao h2:hover{
+	transform:rotate(30deg);
+}

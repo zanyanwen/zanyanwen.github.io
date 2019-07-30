@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>iterator</title>
+</head>
+<body>
+    
+    <script type="text/babel"> 
+        function makeIterator(array) {
+            var nextIndex = 0;
+            return {
+                next: function() {
+                    return nextIndex < array.length ?{value: array[nextIndex++], done: false} :{value: undefined, done: true};
+                }
+            };
+        }
+        var it = makeIterator([1,2,3,4])
+    </script>
+</body>
+</html>

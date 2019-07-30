@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<style type="text/css">
+		</style>
+	</head>
+	<body>
+	<form>
+		用户名:<input type="text" size="15" maxlength="20" placeholder="请输入用户名"/>
+		<br/>
+		<br/>
+		密&nbsp;码:<input type="password" size="15" maxlength="20" placeholder="请输入密码">
+		<br/>
+		<br/>
+		性&nbsp;别:<input type="radio" name="sex" checked/>男
+				   <input type="radio" name="sex"/>女
+				   <input type="radio" name="sex"/>保密
+		<br/>
+		<br/>
+		WEB前端包含哪些内容？
+		<br/>
+		<br/>
+		<input type="checkbox"/>HTML
+		<input type="checkbox"/>JAVA
+		<input type="checkbox"/>javascript
+		<input type="checkbox"/>WEBAPP
+		<br/>
+		<br/>
+		自我评价：
+		<br/>
+		<br/>
+		<textarea placeholder="请输入两百字左右的简单介绍：" rows="10" cols="50"></textarea>
+		<br/>
+		<br/>
+		上传头像：
+		<br/>
+		<br/>
+		<input type="file">
+		<br/>
+		<br/>
+		出生年月：
+		年：
+		<select>
+			<option>1990</option>
+			<option>1991</option>
+			<option>1992</option>
+			<option>1993</option>
+			<option>1994</option>
+			<option>1995</option>
+			<option>1996</option>
+			<option>1997</option>
+			<option>1998</option>
+			<option>1999</option>
+			<option>2000</option>
+			<option>1900</option>
+			<option>2001</option>
+			<option>2002</option>
+		</select>
+		月：
+		<select>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+			<option>6</option>
+			<option>7</option>
+			<option>8</option>
+			<option>9</option>
+			<option>10</option>
+			<option>11</option>
+			<option>12</option>
+		</select>
+		日：
+		<select>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+			<option>6</option>
+			<option>7</option>
+			<option>8</option>
+			<option>9</option>
+			<option>10</option>
+			<option>11</option>
+			<option>12</option>
+			<option>13</option>
+			<option>14</option>
+			<option>15</option>
+			<option>16</option>
+			<option>17</option>
+			<option>18</option>
+			<option>19</option>
+			<option>20</option>
+			<option>21</option>
+			<option>22</option>
+			<option>23</option>
+			<option>24</option>
+			<option>25</option>
+			<option>26</option>
+			<option>27</option>
+			<option>28</option>
+			<option>29</option>
+			<option>30</option>
+			<option>31</option>
+		</select>
+		<br/>
+		<br/>
+		年龄：<input type="number" min="1">
+		<br/>
+		<br/>
+		年龄：<input type="range">
+		<br/>
+		<br/>
+		邮箱：<input type="email"/>
+		<br/>
+		<br/>
+		博客：<input type="url"/>
+		<br/>
+		<br/>
+		<input type="submit" value="登陆">
+		<input type="reset" value="重置">
+	</form>
+	</body>
+</html>

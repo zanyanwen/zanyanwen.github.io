@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>array api</title>
+</head>
+<body>
+    
+    <script>
+        var arr1 = ["name","is","zanyw"]
+        var arr2 = [1,4,2,3,20,3,1]
+        //1、数组转化为字符串
+        var arrStr1 = arr1.toString();
+        var arrStr2 = arr2.toString();
+        console.log("toString",arrStr1)
+        console.log("toString",arrStr2)
+        var arrStr1 = String(arr1)
+        var arrStr2 = String(arr2)
+        console.log("String",arrStr1)
+        console.log("String",arrStr1)
+        console.log(arr1,arr2)
+
+        //2、数组拼接
+        // var arrNew = arr1.concat(arr2)
+        // console.log("arr1,arr2",arr1,arr2)
+        // console.log("arrNew",arrNew)
+        // var arrNew2 = arr1.concat(1,2,3)
+        // console.log("arrNew2",arrNew2)
+
+        //3、删除，插入，替换：（直接修改原数组）
+        // arr1.splice(0,1)  //删除从0开始的1个元素
+        // console.log(arr1)
+        // arr1.splice(0,0,[1,2,3,4]) //从0开始删除0个元素并插入后面的元素
+        // console.log(arr1)
+        // arr1.splice(0,1,"name") //替换2开始的一个元素
+        // console.log(arr1)
+
+        //4、数组元素倒序
+        // arr1.reverse();
+        // console.log(arr1)
+
+        //5、数组排序
+        // arr1.sort()
+        // arr2.sort()       //sort不带参数  值从小到大排序   首字母先后顺序
+        // console.log(arr1)
+        // console.log(arr2)
+
+        // arr1.sort(function(x,y){return y-x})
+        // arr2.sort(function(x,y){return y-x})  //添加一个排序方法，返回正数或负数 负数从小到大  正数从大到小
+        // console.log(arr1)
+        // console.log(arr2)
+
+        //6、首位出入栈
+        // arr2.push(8)
+        // console.log(arr2)
+        // arr2.pop(8)
+        // console.log(arr2)
+
+        // arr2.unshift(8)
+        // console.log(arr2)
+        // arr2.shift(8)
+        // console.log(arr2)
+
+        //ES6数组扩展
+        //7、扩展应算符
+        // console.log("arr2",arr2)
+        // function add(x,y,z,j){
+        //     console.log(x+y+z+j)
+        // }
+        // add(...arr2)  //把arr2的每个元素当做一个参数传入add函数
+
+        // console.log(Math.max(...arr2))
+
+        // function f(x, y, z) {
+        //     console.log(arguments)
+        // }
+
+        // f.apply(null,arr2);
+
+        // var arr1 = [0, 1, 2];
+        // var arr2 = [3, 4, 5];
+        // Array.prototype.push.apply(arr1, arr2);
+        // console.log(arr1)
+        // function unique5(array){ 
+        //     var r = []; 
+        //     for(var i = 0, l = array.length; i < l; i++) { 
+        //         for(var j = i + 1; j < l; j++) 
+        //             if (array[i] === array[j]) j = ++i; 
+        //             r.push(array[i]); 
+        //         } 
+        //     return r; 
+        // }
+
+        // console.log("unique5(arr2)",unique5(arr2))
+
+        console.log("arr2",arr2)
+        var s = new Set(arr2)
+        console.log("s",s)
+
+        let arr3 = [1,2,[3,4,[6,7,[8,9]]],5]
+        console.log(arr3.join());
+
+        let arr4 = [1,2,3]
+        let arr5 = [4,5,6,[7,8]]
+        console.log(arr4.concat(arr5));
+        
+        
+
+    </script>
+</body>
+</html>

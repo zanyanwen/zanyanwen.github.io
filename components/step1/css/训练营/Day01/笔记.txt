@@ -1,0 +1,104 @@
+吴坤金  15662174655
+高素彩   13602527515
+    上课时间(16号---20号)：
+        上午 ：9:20----12:00
+	下午 ：14：00---17：00    
+	晚自习：  17:00----19:00
+
+中心的地址：深圳市福田区八卦四路22号华晟达大厦4楼 402
+
+
+保存  ctrl+s
+怎么在Editplus新建文本文档
+   file-->new-->normal text
+
+在Editpus中调文字的大小
+    Tools--->preferences-->general-->fonts-->调字体的大小-->apply-->ok
+
+在Editplus中去掉备份文件
+   Tools-->preferences-->files-->去掉create backup file when saving的勾(当你保存文件的时候会创建备份文件)--->apply-->ok 
+
+ HTML：做一些静态的网页
+ HTML是用来构建网页的标记语言
+ HTML的结构：
+    <!doctype html>  定义HTML的类型是HTML5
+    <html>
+	  <head>
+		<title>标题</title>
+	  </head>
+	  <body>
+		
+	  </body>
+    </html>
+怎么解决编码的问题（3个方面） 
+  1.看一下保存的文件是不是utf-8的编码（file--->save as）
+  2.看一下你的HTML文件中有没有写<meta charset="utf-8">这句话
+  3.查看一下你的网页是不是utf-8的编码
+
+ ctrl+b  以浏览器的方式打开
+
+ 怎么设置以浏览器的方式打开：
+   Tools-->preferences-->tools-->选择浏览器和浏览器的位置-->apply-->ok
+
+
+怎么设置模版：
+   Tools-->preferences-->files-->templates-->选中你的模版路径-->apply-->ok
+
+ HTML的注释：为了方便注释代码的功能
+     结构：  <!--  注释的内容  -->
+     注意：HTML注释的内容在页面上是看不到的，只能在查看页面源代码中看到
+
+ 标记：
+    1.单标记（空标记）
+	结构：<标记名称> 或者<标记名称/>
+	<br>或者<br/>   代表换行
+	<hr>或者<hr/>    代表水平线
+   属性： 宽度(width)  width="百分比/像素"
+	      高度(size)     size="数字"
+	      颜色(color)   color="颜色值"
+	      水平方向对齐方式(align)   left左边   right右边  center中间
+                                       align="left/center/right"
+      单标记的属性：
+          结构：<标记名称 属性名="属性值">
+	     例子：  <hr width="60%">
+	                 <hr width="70%" size="4">
+    2.双标记
+          结构：<标记名称></标记名称>
+            比如：<html></html>
+	               <head></head>
+		       <title></title>
+          双标记的属性：
+	      <标记名称 属性名="属性值">内容</标记名称>
+		例如：<p align="left/center/right">内容</p>
+
+           1.段落 (p)  双标记
+	     结构：<p>内容</p>
+	     注意：默认上下会有空隙，字的对齐方式是靠左边的
+	     p的属性：设置字的对齐方式（align）
+	     <p align="left/center/right">内容</p>
+
+	    2.标题(hn) n代表1~6  双标记
+	       结构: <hn>内容</hn>
+	                <h1>内容</h1>
+	       注意：标题默认上下会有空隙，字体是加粗的，字的对齐方式是靠左边的(align) h1是最大的
+	       字，h6是最小的
+
+HTML规范:
+1.所有的标记名称推荐小写字母；
+2.单标记必须以/>结束，比如<br/>;
+3.属性可有可无 比如<br/>;
+4.属性是不分先后顺序的；
+5.属性值必须在引号之间（单双引号）
+
+	       
+
+
+
+
+
+
+
+ 
+
+  
+    

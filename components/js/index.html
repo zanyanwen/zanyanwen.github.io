@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>继承</title>
+</head>
+
+<body>
+    <button onclick="alert('点击按钮')">按 钮</button>
+    <button type="button" onclick="alert('Welcome!')">点击这里</button>
+
+    <div id="div"></div>
+
+    <b>我的名字</b>
+    <i>我的名字</i>
+    <u>我的名字</u>
+    <s>我的名字</s>
+    <sub>我的名字</sub>
+    <sup>我的名字</sup>
+
+    <img src="1.jpg" alt="" width="100px" height="500px">
+
+    <a href="http://www.baidu.com" target="_blank">百度</a>
+    <a href="mailto:zhaoxu@tedu.cn">联系我们</a>
+
+    <script>
+        var ele = document.getElementById("div")
+        ele.innerHTML = "wo jiushi div"
+        function Super(name, age) {
+            this.flag = true
+            this.name = name
+            this.age = age
+        }
+        Super.prototype.getFlag = function () {
+            return this.flag
+        }
+        function Sub(name, age) {
+            Super.apply(this, arguments)
+            this.subFlag = false
+        }
+        Sub.prototype = new Super
+        Sub.prototype.constructor = Sub
+        Sub.prototype.getSubFlag = function () {
+            return this.subFlag
+        }
+
+        var obj = new Sub("dog", 3)
+
+        console.log(obj.name, obj.age)
+        console.log(obj.flag, obj.subFlag, obj.getFlag(), obj.getSubFlag())
+
+        document.write("<h1>this is a title</h1>")
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+1、渐变
+	1、径向渐变
+		background-image:radial-gradient([size at position],color-point,color-point);
+	2、重复渐变
+		repeating-linear-gradient();
+		repeating-radial-gradient();
+	3、浏览器兼容性
+		通过 浏览器前缀 的方式实现兼容性
+		Firefox : -moz-
+		Chrome & Safari : -webkit-
+		Opera : -o-
+
+		如果浏览器不支持属性的话，前缀就加在属性名称前
+		animation:~~~~;
+		-moz-animation:~~~~~~;
+
+		如果浏览器不支持值的话，前缀就加在值的前面
+		background-image:linear-gradient();
+		background-image:-moz-linear-gradient();
+2、文本格式化
+	1、字体属性
+		1、font-family
+		2、font-size
+		3、font-weight
+			normal/bold/400~900
+		4、font-style
+			normal/italic
+		5、小型大写字母
+			font-variant
+			norma/small-caps
+		6、font
+			style variant weight size family
+
+			font:12px "microsoft yahei";
+	2、文本属性
+		1、color
+		2、text-align
+			left/center/right
+		3、text-decoration
+			none
+			underline
+			overline
+			line-through
+		4、line-height
+			控制一行数据的高度
+			行高的高度如果高于文字本身的高度，那么这段文字就要在行高的范围内呈现出垂直居中
+		5、text-indent
+			首行文本缩进
+		6、text-shadow
+			h-shadow v-shadow blur color;
+3、表格
+	1、特有属性
+		1、border-collapse
+			1、separate 默认值
+			2、collapse 合并边框
+		2、border-spacing
+			1个值：垂直和水平间距相同
+			2个值：1个值表示 水平间距，第2个值垂直间距
+			前提：border-collapse 必须是默认值(separate)
+		3、caption-side
+			top
+			bottom
+		4、table-layout
+			1、auto
+				默认值
+				自动表格布局
+				单元格的宽度由内容来决定
+
+				算法：
+					每加载一个单元格的是都要计算宽度和高度
+					弊端：效率低
+					特点：灵活
+			2、fixed
+				固定表格布局
+				单元格的宽度由设定的数据来决定
+					加载完第一行的时候就可以加速显示表格
+					特点：效率高
+					弊端：不够灵活
+4、浮动
+	1、定位
+		改变元素在页面上的默认位置
+		定位方式：
+			1、普通流定位(文档流定位)
+				页面默认定位方式
+			2、浮动定位
+
+			3、相对定位
+			4、绝对定位
+			5、固定定位
+	2、浮动定位
+		1、特征
+			1、脱离文档流-不占据页面空间，剩余元素上前补位
+			2、浮动元素会停靠在父元素的左边或右边，或平级的其他已浮动元素
+			3、浮动元素依然位于包含框内
+			4、浮动定位处理的问题：主要是让多个块级元素能够在一行内显示。
+		2、语法
+			 属性：float
+			 值：
+				1、none
+					默认值，无浮动
+				2、left	
+					左浮动
+				3、right
+					右浮动
+		3、浮动引发的特殊效果
+			1、父元素显示不下所有已浮动元素的话，最后一个自动换行
+			2、元素浮动后，宽度将变成自适应
+			3、元素浮动后，所有的元素都将变成块级元素
+				允许修改尺寸
+			4、文本，行内，行内块采用环绕的方式排列，是不会被浮动元素压在底下，而回巧妙的避开。
+		4、清除浮动
+			原因：元素一旦浮动起来的话，可能会对后面的元素产生影响
+			属性：clear
+			取值：
+				1、none
+					默认值
+				2、left
+				3、right
+				4、both
+		5、浮动元素对父元素的影响
+			对父元素高度影响，如果一个元素包含浮动元素的话，那么他的高度以未浮动子元素为准。如果子元素全为浮动元素，高度将变成0
+			1、设置父元素高度
+				弊端：不是每次都能确定父元素高度
+			2、设置父元素浮动
+				弊端：对后续元素会产生影响
+			3、设置父元素overflow
+				取值：
+					hidden
+					auto
+				弊端：溢出的时候需要显示的话就会收到影响
+			4、父元素中，追加 空块级子元素，并且设置其clear属性为 both

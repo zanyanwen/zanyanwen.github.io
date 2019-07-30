@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<style>
+		</style>
+	</head>
+	<body>
+	<h1 align="center">笔记day01</h1>
+	<hr>
+	<h2>1.单标记</h2>
+    <p color="red">结构：&lt;标记名称&gt;或者&lt;标记名称/&gt;</p>
+	<p>属性：宽度(width)、高度(size)、颜色(color)、对齐方式(align)</p>
+	<h3>列如：</h3>
+	<p>&lt;br&gt;或者&lt;br/&gt;、&lt;hr&gt;或者&lt;/hr&gt;。</p>
+
+	<h2>2.双标记</h2>
+	<p>结构：&lt;标记名称&gt;&lt;/标记名称&gt;</p>
+	<h3>列如：</h3>
+	<p>段落：&lt;p&gt;内容&lt;/p&gt;</p>
+	<p>标题：&lt;hn&gt;内容&lt;/hn&gt;，n代表1-6的数字</p>
+	<h2>3.文本样式</h2>
+	<p><b>加粗</b></p>
+	<p><i>倾斜</i></p>
+	<p><s>删除</s></p>
+	<p><u>下划线</u></p>
+	<h2>4.实体</h2>
+	<p>3&lt;7</p>
+	<p>7&gt;3</p>
+	<p>&quot;双引号&quot;</p>
+	<p>&#39;单引号&#39;</p>
+	<p>空&nbsp;&nbsp;&nbsp;&nbsp;格</p>
+	<p>版权 &copy; &reg;</p>
+	</body>
+</html>

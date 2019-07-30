@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/*1、声明/复位计数器*/
+			body{
+				counter-reset:c1;
+			}
+			/*2、设置计数器增量*/
+			h3{
+				counter-increment:c1 1;
+				/*将 c2 计数器 复位成 0*/
+				counter-reset:c2;
+			}
+			div{
+				counter-increment:c2 1;
+			}
+			/*3、使用计数器*/
+			h3:before{
+				content:counter(c1)"、";
+			}
+			div:before{
+				content:counter(c1)"."counter(c2)"、";
+			}
+		</style>
+	</head>
+	<body><!-- c1 : 0 -->
+		<h3>HTML</h3> <!-- c1:1,c2:0 -->
+		<div>基本元素</div><!-- c1:1,c2:1 -->
+		<div>行内元素</div><!-- c1:1,c2:2 -->
+		<div>块级元素</div><!-- c1:1,c2:3 -->
+		<h3>CSS</h3> <!-- c1:2,c2:0-->
+		<div>选择器</div><!-- c1:2,c2:1 -->
+		<div>边框属性</div><!-- c1:2,c2:2 -->
+		<div>尺寸属性</div><!-- c1:2,c2:3 -->
+	</body>
+</html>

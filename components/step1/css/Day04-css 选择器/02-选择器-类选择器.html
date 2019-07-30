@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			/*声明一个 类选择器 ，名称为 redColor，样式效果 文本颜色 为 红色*/
+			.redColor{
+				color:red;
+			}
+
+			.greenBack{
+				background-color:green;
+			}
+
+			/*想控制 class为redColor的 p元素 的大小为 20pt*/
+			p.redColor{
+				font-size:20pt;
+			}
+		</style>
+	</head>
+	<body>
+		<p>这是两首诗</p>
+		<!-- 想：控制 第二个div的文本颜色为红色 -->
+		<div>两只黄鹂鸣翠柳</div>
+		<div class="redColor">一行白鹭上西天</div>
+		<!-- 想控制 class为redColor的 p元素 的大小为 20pt -->
+		<p class="redColor">借问酒家何处有</p>
+		<!-- span 元素 既有红色颜色(redColor)，又有绿色背景(greenBack) -->
+		<span class="redColor greenBack">牧童遥指杏花村</span>
+	</body>
+</html>

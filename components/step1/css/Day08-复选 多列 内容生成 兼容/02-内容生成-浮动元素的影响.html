@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#d1{
+				border:1px solid #000;
+			}
+			#d1 div{
+				width:200px;
+				height:200px;
+			}
+			#d1 div:nth-child(1){
+				background:red;
+				float:left;
+			}
+			#d1 div:nth-child(2){
+				background:green;
+				float:left;
+			}
+			#d1 div:nth-child(3){
+				background:yellow;
+				float:left;
+			}
+
+			div:after{
+				content:"";
+				display:block;
+				clear:both;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="d1">
+			<div></div>
+			<div></div>
+			<div></div>
+			<!--
+				1、最后一个子元素 ：#d1:after{}
+				2、块级元素 ： display:block;
+				3、清除浮动 clear:both ：clear:both;
+				4、空的元素 ：content:"";
+			-->
+		</div>
+	</body>
+</html>

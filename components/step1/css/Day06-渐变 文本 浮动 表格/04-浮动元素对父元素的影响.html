@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			#d1,#d2,#d3{
+				width:200px;
+				height:200px;
+			}
+			#d1{
+				background:red;
+				float:left;
+			}
+			#d2{
+				background:green;
+				float:left;
+			}
+			#d3{
+				background:blue;
+				float:left;
+			}
+
+			#parent{
+				border:1px solid #000;
+				/*1、设置父元素高度*/
+				/*height:200px;*/
+
+				/*2、父元素浮动*/
+				/*float:left;*/
+
+				/*3、设置 overflow 属性 ，撑起高度*/
+				/*overflow:hidden;*/
+			}
+		</style>
+	</head>
+	<body>
+		<div id="parent">
+			<div id="d1"></div>
+			<div id="d2"></div>
+			<div id="d3"></div>
+			<div style="clear:both;"></div>
+		</div>
+		<div>
+			Hello i'm a div !!!! Ha Ha Ha
+		</div>
+	</body>
+</html>

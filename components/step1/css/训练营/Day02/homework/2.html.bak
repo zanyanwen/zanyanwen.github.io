@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<style>
+		</style>
+	</head>
+	<body>
+	<table border="1" width="300px" height="300px">
+		<tr>
+			<td colspan="3">这是表头行</td>
+		</tr>
+		<tr>
+			<td rowspan="3"></td>
+			<td colspan="2"></td>
+		</tr>
+		<tr>
+			<td>这是表底行</td>
+			<td></td>
+		</tr>
+	</table>
+	</body>
+</html>

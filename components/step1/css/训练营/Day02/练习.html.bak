@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<style>
+		</style>
+	</head>
+	<body>
+	<table border="1" width="800px" height="600px" cellspacing="0" align="center" valign="middle">
+		<tr bgcolor="orange">
+			<td>姓名</td>
+			<td>数学</td>
+			<td>语文</td>
+		</tr>
+		<tr cellpadding="0">
+			<td>张三</td>
+			<td>87</td>
+			<td>89</td>
+		</tr>
+		<tr>
+			<td>李四</td>
+			<td>98</td>
+			<td>79</td>
+		</tr>
+		<tr>
+			<td colspan="3"></td>
+		</tr>
+	</table>
+<br/>
+<hr/>
+	<table border="1" cellspacing="0" width="300" height="200">
+		<tr>
+			<td rowspan="2">A</td>
+			<td>B</td>
+			<td>C</td>
+		</tr>
+		<tr>
+			<td>D</td>
+			<td>E</td>
+		</tr>
+	</table>
+	</body>
+</html>

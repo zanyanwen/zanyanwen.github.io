@@ -1,0 +1,32 @@
+/*第一步：页面的整体布局*/
+#header,#jixing,#tixing,#icons,#footer {
+  width:900px;
+  height:50px;
+  border:1px solid black;
+  margin:0px auto;
+}
+#banner,#hujiao,#dingwei {
+  width:100%;
+  height:400px;
+  border:1px solid red;
+}
+#jixing {height:450px;}
+#hujiao {height:300px;}
+#tixing {height:400px;}
+#dingwei {height:350px;}
+#icons {height:400px;}
+#footer {height:150px;}
+
+/*为header部分定义样式*/
+#header>div {
+  width:160px;
+  height:32px;
+  margin-top:15px;
+  margin-left:10px;
+  background-image:url("images/iconlist_1.png");
+  background-position:-870px -98px;
+  float:left;
+}
+#header ul {
+  float:right;
+}

@@ -1,0 +1,86 @@
+<!doctype html>											 <!--定义文档为html5类型-->
+ <head>
+  <meta charset="UTF-8">								 <!--设置网页编码为utf-8-->
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">		 <!--设置关键字，中间用逗号隔开-->
+  <meta name="Description" content="">					 <!--设置网页 描述-->
+  <title></title>	
+  <style type="text/css">
+	#stage{
+		width:600px;
+		height:300px;
+		border:1px solid #DDD;
+		margin:50px auto;
+		margin-top:150px;
+		perspective:1000;
+	}
+	#parent{
+		width:600px;
+		height:300px;
+		position:relative;
+		transform-style:preserve-3d;
+		animation:xunhuan 10s linear infinite alternate;
+		animation-fill-mode:none;
+	}
+	#parent div{
+		width:400px;
+		height:200px;
+		background:#F00;
+		position:absolute;
+		left:100px;
+		top:50px;
+	}
+	#parent div:nth-child(1){
+		transform:rotatey(0deg) translateZ(200px);
+	}
+	#parent div:nth-child(2){
+		transform:rotatey(60deg) translateZ(200px);
+	}
+	#parent div:nth-child(3){
+		transform:rotatey(120deg) translateZ(200px);
+	}
+	#parent div:nth-child(4){
+		transform:rotatey(0deg) translateZ(-200px);
+	}
+	#parent div:nth-child(5){
+		transform:rotatey(-60deg) translateZ(200px);
+	}
+	#parent div:nth-child(6){
+		transform:rotatey(-120deg) translateZ(200px);
+	}
+
+
+	/***********动画效果***********/
+	@keyframes xunhuan{
+		0%{
+			transform:rotatex(30deg) rotatey(0deg);
+		}
+		50%{
+			transform:rotatex(30deg) rotatey(180deg);
+		}
+		100%{
+			transform:rotatex(30deg) rotatey(360deg);
+		}
+	}
+	
+	/*************暂定/播放***************/
+	#parent:hover{
+		animation-play-state:paused;
+	}
+
+  </style>
+ </head>
+ <body>
+	<div id="stage">
+		<div id="parent">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+ </body>
+</html>

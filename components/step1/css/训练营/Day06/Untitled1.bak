@@ -1,0 +1,31 @@
+<!doctype html>											 <!--定义文档为html5类型-->
+ <head>
+  <meta charset="UTF-8">								 <!--设置网页编码为utf-8-->
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">		 <!--设置关键字，中间用逗号隔开-->
+  <meta name="Description" content="">					 <!--设置网页 描述-->
+  <title></title>	
+  <style>
+	#box{
+		width:100%;
+		height:100px;
+		border:1px solid #ccc;
+	}
+	#box a{
+		border:1px solid #f00;
+	}
+  </style>
+ </head>
+ <body>
+	<div id="box"></div>
+	<p>
+		<a href="#">1</a>
+		<a href="#">2</a>
+		<a href="#">3</a>
+		<a href="#">4</a>
+		<a href="#">5</a>
+		<a href="#">6</a>
+	</p>
+ </body>
+</html>

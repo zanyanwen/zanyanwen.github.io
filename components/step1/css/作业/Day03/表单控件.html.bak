@@ -1,0 +1,79 @@
+<!doctype html>											 <!--定义文档为html5类型-->
+ <head>
+  <meta charset="UTF-8">								 <!--设置网页编码为utf-8-->
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">		 <!--设置关键字，中间用逗号隔开-->
+  <meta name="Description" content="">					 <!--设置网页 描述-->
+  <title></title>		
+ </head>
+ <body>
+	<form method="post">
+		<h1 align="center">增加管理员</h1>
+		<table align="center" width="500px" height="300px">
+			<tr>
+				<td>姓名：</td>
+				<td><input type="text" maxlength="10"></td>
+				<td>10个字符以内</td>
+			</tr>
+			<tr>
+				<td>密码：</td>
+				<td><input type="password" maxlength="10"></td>
+				<td>10个字符以内</td>
+			</tr>
+			<tr>
+				<td>性别：</td>
+				<td>
+					<input id="rdoman" type="radio" name="rdoGenden" checked>
+					<label for="rdoman">男士</label>
+					<input id="rdowmem" type="radio" name="rdoGenden">
+					<label for="rdowmem">女士</label>
+				</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>工作城市</td>
+				<td>
+					<select size="5" name="selCity" multiple>
+						<option>北京市</option>
+						<option>上海市</option>
+						<option>深圳市</option>
+						<option>天津市</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>头像：</td>
+				<td>
+					<input type="file" name="txtImg">
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<input type="submit" value="保存">
+					<input type="reset">
+				</td>
+				<td></td>
+			</tr>
+		</table>
+		
+		<details>
+		<summary>各项<mark>技能</mark>指数</summary>
+			<ul type="none" >
+				<li>
+					HTML:<meter min="0" max="100" value="100" title="100"></meter>
+				</li>
+				<br/>
+				<li>
+					CSS3:<meter min="0" max="100" value="90" title="90"></meter>
+				</li>
+				<br/>
+				<li>
+					AJAX:<meter min="0" max="100" value="60" title="60"></meter>
+				</li>
+			</ul>
+		</details>
+	</form>
+ </body>
+</html>

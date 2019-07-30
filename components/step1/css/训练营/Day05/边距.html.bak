@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<style>
+			div{
+				width:100px;
+				height:100px;
+				}
+			.div1{
+				background:red;
+				margin:auto;       /*设置盒子居中*/
+				text-align:center; /*设置文本水平居中*/
+				line-height:100px; /*设置文本垂直居中*/
+			}
+			a{
+				background:green;
+				margin-top:50px;
+				display-block;
+				width:100px;
+				height:100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div1">123</div>
+		<div class="div2">456</div>
+		<p>789<br/>abc</p>
+		<a href="#">首页</a>
+	</body>
+</html>

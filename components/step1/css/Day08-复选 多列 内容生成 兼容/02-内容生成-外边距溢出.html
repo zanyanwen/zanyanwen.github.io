@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#d1,#d2{
+				width:200px;
+				height:200px;
+				background:red;
+			}
+			#d2{
+				background:yellow;	
+			}
+			#d3{
+				width:100px;
+				height:100px;
+				background:blue;
+				margin-top:20px;
+			}
+
+			#d2:before{
+				content:"";
+				display:table;
+			}
+		</style>	
+	</head>
+	<body>
+		<div id="d1"></div>
+		<div id="d2">
+			<!--
+				1、第一个子元素
+				2、为空
+				3、display:table
+			-->
+			<div id="d3"></div>
+		</div>
+	</body>
+</html>

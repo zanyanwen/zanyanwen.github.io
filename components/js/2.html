@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <style>
+            .header,
+            .footer{
+                border: 1px solid #333;
+                background: #aaa;
+                text-align: center;
+            }
+            .middle,.left,.right{
+                float: left;
+                position: relative;
+                min-height: 150px;
+            }
+            .container{
+                padding:0 220px 0 200px;
+                overflow: hidden;
+            }
+            .middle{
+                width: 100%;
+                background: blue;
+                word-break: break-all;
+            }
+            .left{
+                width:200px;
+                background:red;
+                margin-left: -100%;
+                left: -200px;
+            }
+            .right{
+                width:220px;
+                background:yellow;
+                margin-left: -220px;
+                right: -220px;
+            }
+            .footer{
+                clear: both;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="header">header</div>
+        <div class="container">
+            <div class="middle">欢迎使用React Native！这篇文档会帮助你搭建基本的React Native开发环境。如果你已经搭好了环境，那么可以尝试一下编写Hello World。
+                根据你所使用的操作系统、针对的目标平台不同，具体步骤有所不同。如果想同时开发iOS和Android也没问题，你只需要先选一个平台开始，另一个平台的环境搭建只是稍有不同。
+                如果阅读完本文档后还碰到很多环境搭建的问题，我们建议你还可以再看看由本站提供的环境搭建视频教程(macOS iOS、macOS Android、windows Android)、windows环境搭建文字教程、以及常见问题。注意！视频教程或者其他网络上的博客和文章可能和本文</div>
+            <div class="left">欢迎使用React Native！这篇文档会帮助你搭建基本的React Native开发环境。如果你已经搭好了环境，那么可以尝试一下编写Hello World。
+                根据你所使用的操作系统、针对的目标平台不同，具体步骤有所不同。如果想同时开发iOS和Android也没问题，你只需要先选一个平台开始，另一个平台的环境搭建只是稍有不同。
+                如果阅读完本文档后还碰到很多环境搭建的问题，我们建议你还可以再看看由本站提供的环境搭建视频教程(macOS iOS、macOS Android、windows Android)、windows环境搭建文字教程、以及常见问题。注意！视频教程或者其他网络上的博客和文章可能和本文</div>
+            <div class="right">欢迎使用React Native！这篇文档会帮助你搭建基本的React Native开发环境。如果你已经搭好了环境，那么可以尝试一下编写Hello World。
+                根据你所使用的操作系统、针对的目标平台不同，具体步骤有所不同。如果想同时开发iOS和Android也没问题，你只需要先选一个平台开始，另一个平台的环境搭建只是稍有不同。
+                如果阅读完本文档后还碰到很多环境搭建的问题，我们建议你还可以再看看由本站提供的环境搭建视频教程(macOS iOS、macOS Android、windows Android)、windows环境搭建文字教程、以及常见问题。注意！视频教程或者其他网络上的博客和文章可能和本文</div>
+        </div>
+        <div class="footer">footer</div>
+
+        <script>
+            let arr = ['1','2','3'].map(parseInt)
+            console.log(arr);
+            console.log(parseInt('2'));
+            console.log(parseInt('3'));
+            
+        </script>
+    </body>
+</html>

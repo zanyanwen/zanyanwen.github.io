@@ -1,0 +1,42 @@
+	#d1{
+		width:500px;
+		height:55px;
+		margin:auto;
+	}
+	#d1 .seach{
+		width:500px;
+		height:35px;
+		background-color:#E4393C;
+		margin-bottom:10px;
+		border:2px solid #E4393C;
+	}
+	#txtseach{
+		width:380px;
+		height:20px;
+		padding:5px;
+		background-color:#fff;
+		line-height:25px;
+		color:#999;
+	}
+	input.button{
+		width:80px;
+		height:35px;
+		line-height:25px;
+		background-color:#E4393C;
+		font-size:14px;
+		color:#fff;
+		font-weight:bold;
+		border:2px solid transparent;
+	}
+	.hotwords{
+		width:500px;
+		height:15px;
+		font-size:10px;
+		color:#7C8186;
+		overflow:hidden;
+	}
+	.hotwords a{
+		text-decoration:none;
+		color:#7C8186;
+	}
+	

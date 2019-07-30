@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<style>
+		</style>
+	</head>
+	<body>
+<!--标题、段落-->
+		<h1 align="center">HTML5 &lt;Day01&gt;</h1>
+		<hr>
+		<h2>1 HTML 文档片段</h2>
+		<h3>1.1 问题</h3>
+		<p>创建如图-1所示的HTML页面：</p>
+		
+		<h3>1.2 方案</h3>
+		<p>使用HTML标记来完成该页面效果</p>
+		<h3>实现</h3>
+		<p>建立一个文本文件，并修改文件名为first.html,然后使用文本编辑器打开该文件，并为该文件添加<br>代码，以创建标准格式的HTML 文档</p>
+		<p>然后，在body元素添加代码，以创建居中显示的段落文本，代码如下所示：</p>
+<!--文本样式-->
+		加粗 
+		<b>加粗</b>  
+		<i>倾斜</i>  
+		<s>￥49.00</s>  
+		<u>首页</u>   
+		3<sup>2</sup>  
+		x<sup>2</sup>+y<sup>2</sup> 
+		H<sub>2</sub>O
+
+<!--实体-->
+    
+        <p>3&lt;7</p>
+		<p>7&gt;3</p>
+		<p>i am &quot; student &quot;</p>
+		<p>i am &#39; student &#39;</p>
+		<p>i &nbsp; &nbsp; &nbsp; am student</p>
+		<p>&copy; &reg;</p>
+	</body>
+</html>

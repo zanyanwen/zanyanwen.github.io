@@ -1,0 +1,6 @@
+/*3、为h3定义：字体颜色：黄色，字体大小：10pt，背景颜色：银灰色*/
+h3{
+	color:yellow;
+	font-size:10pt;
+	background-color:silver;
+}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#links a{
+				display:inline-block;
+				width:100px;
+				background:#999;
+				border:1px solid #333;
+			}
+
+			#show_img{
+				width:350px;
+				height:350px;
+				margin-top:20px;
+				padding:5px;
+				border:1px solid #333;
+			}
+
+			#show_img img{
+				display:none;
+			}
+			#show_img img:target{
+				display:block;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="links">
+			<a href="#img1">img1</a>
+			<a href="#img2">img2</a>
+			<a href="#img3">img3</a>
+			<a href="#img4">img4</a>
+		</div>
+		<div id="show_img">
+			<img id="img1" src="../Images/p001.jpg" />
+			<img id="img2" src="../Images/p002.jpg" />
+			<img id="img3" src="../Images/p003.jpg" />
+			<img id="img4" src="../Images/p004.jpg" />
+		</div>
+	</body>
+</html>
