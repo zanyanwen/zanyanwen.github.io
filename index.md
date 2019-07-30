@@ -1,5 +1,5 @@
 # 目录
-## [TypeScript]('./components/typeScript/index.md') 
+## [TypeScript](./components/typeScript/index.md) 
 
 ## Welcome to GitHub Pages
 
